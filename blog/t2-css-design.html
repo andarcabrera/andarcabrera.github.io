@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anda Cabrera's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../Website/my-website-solo-challenge.css">
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+<body class="blogtext">
+      <h1 class="blogtext" id="blogtitle"> </h1>
+<h2> Double Display</h2>
+      <p>For my blog this week I chose the topic that gave me some trouble when working on my website.When reading about them, they seemed pretty non-threatening, just two other CSS properties that went in my imaginary toolbox. But they proved much naughtier when I tried to actually use them in practice. So here it is, my tale of the battle with the displays.</p>
+      <p><b>Block Display</b> is the default display for many of the html elements (block-level elements) such as <i> div, p, h1-h6, header, footer, etc </i>. Imagine that each html block element is surrounded by a box. The box of the block line elements occupies its own row, for the full length of the screen. Even if your paragraph is only two letters long, it will still redeem the full lenght of the screen for itself.</p>
+      <p><b>Inline Display</b> is the default display for the inline elements such as <i>em, strong, b.</i> These elements don't add a new row to the layout and are usually included in a paragraph or other block-level elements. Although, the default display of these elements is inline we can assign them a block display and they they will behave like block elements.</p>
+      <p><b>Inline-block Display</b>. What if we wanted to make block elements behave like inline elements you ask? Why not just assign them a display:inline property? Because that would be too easy I say. It might work in some cases, but for two paragraphs for example it just merges them together and treats them like one paragraph. Here comes inline-block to save the day. This property allows block elements to display inline while maintaining their block properties. You can resize them, add margins and paddings and much more.</p>
+      <p>Below, I included examples of the block and inline-block display and the CSS code I used to create them. If you are a visual learner, like me, that will help you more than my technical prose.</p>
+    <p><img src="examplesblock.jpg"/></p>
+    <p>The CSS code I used for these examples is below</p>
+    <p><img id="displayblog" src="cssimg.png"/></p>
+</body>
+</html>
+

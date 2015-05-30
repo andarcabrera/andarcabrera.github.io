@@ -3,7 +3,6 @@ body{
   background-color:#A1ABB2;
   font-family: 'Indie Flower', cursive;
 }
-}
 div {
    min-height:100%;
    position:relative;
@@ -101,8 +100,11 @@ li img{
   margin-left: 70px;
 }
 .blogtext{
-  font-family: 'Noto Sans' sans-serif;
+  font-family: 'Noto Sans', Sans serif;
 }
 #blogtitle{
   margin-left: 38px;
+}
+#displayblog{
+  padding-left:0px;
 }
