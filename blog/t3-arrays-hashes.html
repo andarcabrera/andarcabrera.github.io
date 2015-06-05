@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrays vs. Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog.css">
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+<body class="blogtext">
+      <h1 class="blogtext" id="blogtitle">Let's Hash it Out </h1>
+      <h2>[]Arrays vs. {}Hashes </h2>
+      <p>Arrays and Hashes are similar constructs in Ruby. They are both collections of objects that contain values which have keys associated to them. Arrays automatically assign indices, represented by consecutive integers, to the ojects contained in them. Let's say we have an array with the following objects ['cubs', 'bulls', 'bears']. 'cubs' would have index 0, 'bulls' index 1, and so on and so forth. Yes, the indexing starts at 0. Now I get why we have a Phase 0 at DEV Bootcamp.</p>
+      <p>Hashes, on the other hand, have keys associated to their values, they are called key/value pairs.  The keys can be anything, but they do need to be unique, while the values can repeat themselves in the hash. For an example let's got with sports again: {"baseball" => "cubs", "basketball" => "bulls", "football" => "bears"}. I used strings in both examples, arrays and hashes, but they can contain any objects, even other arrays and hashes (nested elements).</p>
+      <p></p>
+      <p>Now that we learned a bit about array and hashes, let's see how we can create them. I will walk you through two of the most popular ways:
+        <ol>
+          <li> <b>Array.new/Hash.new method.</b> With this method you can create empty arrays and hashes and add elements later. You are not limited to creating empty ones, but I'll keep it simple for now.  </li>
+            <ul>
+          <li>a = Array.new</li>
+          <li>h = Hash.new</li>
+            </ul>
+          <li><b>The literal array and hash constructor.</b>  Using square brackets [] for arrays and curly brackets {} for hashes you can create and populate them at the same time. You can also use the method to create empty arrays/hashes, but I'll populate my examples below: </li>
+            <ul>
+              <li>a = ['cat', 'dog', 'bird']</li>
+              <li>h = {"Basil" => "cat", "Hazel" => "dog", "Gigi" => "bird"} (these are all pets I owned btw).</li>
+              </ul>
+        </ol>
+      </p>
+      <p>Arrays and hashes can be manipulated in many ways, you can add/retrieve/remove ojects, merge them, apply all sorts of methods and transform them in many ways.  I will not get into detail with that but I would like to touch on one more topic. Arrays and hashes sound just dandy but what do we actually use them for? And when use arrays vs. hashes? They are so closely connected, basically an array is a hash  where the keys are integers and hashes are called associative arrays. Feeling more confused? From my research so far it seems that hashes are prefered for their flexibility to use any objects as keys, they are not limited to integers, but if you're going for a simpler ordered collection where automatic indices do the trick, and array is the way to go. </p>
+
+</body>
+</html>
+
