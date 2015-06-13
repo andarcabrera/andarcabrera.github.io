@@ -11,8 +11,9 @@ div {
 nav ul {
   list-style: none;
   background-color: #305D7F;
-  text-align: right;
+  text-align: center;
   border-radius: 15px;
+
 }
 nav li {
   font-family: 'Indie Flower', cursive;
@@ -21,7 +22,8 @@ nav li {
   height: 55px;
   line-height:55px;
   display:inline-block;
-  padding:3px 10px 3px 10px;
+  padding:3px 70px 3px 10px;
+  text-decoration: underline;
 }
 nav a {
   text-decoration: none;
@@ -30,46 +32,59 @@ nav a {
   transition: .3s background-color;
 }
 nav a:hover {
-  background-color: #7F3D23;
+  background-color: salmon;
 }
 nav a.active {
   background-color: #fff;
   color: #444;
   cursor: default;
 }
-section aside{
-  display:inline-block;
-}
-img{
-    display: block;
-    margin:auto;
-    padding-left:40px;
-  }
 section{
-  float:right;
-  width: 70%;
+  float:left;
+  width: 30%;
+  height: 80%;
+  position: relative;
 }
+
+.main{
+  width: 60%;
+  margin-top: 30px;
+  height: 80%;
+}
+
+section img{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+.image{
+  height: 80%;
+  position: relative;
+}
+
 h1{
 margin:3px 2px 0px 7px;
 font-family: 'Indie Flower', cursive;
 }
+
 h2{
-    padding: 3px 30px 0px 40px;
+    padding: 0 30px 0px 70px;
 }
+
 p{
-  padding: 5px 30px 0px 40px;
+  padding: 0 30px 0px 70px;
 }
-aside{
-  float:left;
-  padding: 30px 0px 50px 0px;
-}
+
 footer{
-float:bottom;
+float: bottom;
 clear:both;
-position:absolute;
-bottom:0;
+position: absolute;
+bottom:0px;
 width:98%;
 }
+
 footer ul {
   list-style: none;
   background-color: #305D7F;
@@ -77,14 +92,19 @@ footer ul {
   border-radius: 15px;
 }
 footer li {
-  height: 55px;
   display:inline-block;
   text-align: right;
 }
 li img{
   padding: 10px 3px 10px 3px;
 }
+
+#github{
+  border-radius: 55%;
+  size: 50%;
+}
 #blogaside{
+  width: 40%;
   padding: 0px;
   float:left;
   border-left: 2px solid black;
@@ -98,10 +118,14 @@ li img{
   margin-left: 60px;
 }
 .cultural{
-  margin-left: 70px;
+  margin-left: 60px;
 }
 .blogtext{
   font-family: 'Noto Sans' sans-serif;
+}
+#blognav{
+  text-align: right;
+  padding:3px 0 3px 10px;
 }
 #blogtitle{
   margin-left: 38px;
