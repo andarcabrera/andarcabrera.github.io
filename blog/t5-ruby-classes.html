@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrays vs. Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog.css">
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+<body class="blogtext">
+      <h1 class="blogtext" id="blogtitle">Classy Ruby </h1>
+      <h2>June 18, 2015 </h2>
+      <p>Classes are a great way to group objects together based on their shared methods. These methods created within a class that are available to all objects of that class are called <i> instance methods </i>, as opposed to <i> singleton methods </i> that are defined for one particular object.</p>
+      <p>While the objects of a class share the instance methods, they also come with their own <i> state </i>, which is a set of values that are particular to that object. We want to be able to access or set these values that define the state of the object and that is where the <i>instance variables </i> come into play. Instance variables that are initialized within a class can be used by any method defined in that class. After this brief introduction I will use an example of a class and explain as I go the instance methods, variables, and different steps in defining the class.</p>
+      <p>For my example I will chose a class <b> Book </b>, that will contain instance variables for title, author, price and methods for a description of the books and file as name. </p>
+      <p>When I initialize the class I want to set the objects' state (title, author, price). I can do that by passing them as arguments to the object and than associate the instance variable with the corresponding argument: @title = title. I also need a way to read or reset the value for these variables. In this case, the value for title and author will not change so I can use and <i> attribute reader method </i> and I need to be able to both read and update the price, so I will set an <i> attribute accessor method</i> for the price instance variable.
+        <ul>
+          <li><code>class Book
+  def initialize (title, author, price)<br>
+  <ul>
+    @title = title<br>
+    @author = author<br>
+    @price = price<br></ul>
+  end<br>
+    attr_reader :title, :author<br>
+    attr_accessor :price</code></li></ul></p>
+      <p>Moving on to methods, I want this class to have a display method, that will put out a string with the book's title, author and price, and a file_as method that will show that the book is filed by author. The extra end there is to close the class definition.
+        <ul>
+          <li><code>  def display<br>
+   "This is #{@title} by #{@author} and it costs $#{price}"<br>
+  end<br>
+
+  def file_as<br>
+   @author<br>
+  end<br>
+end</code></li></ul></p>
+      <p>Now on testing our class we can see if our methods do what we expect them to and check if we can reset the price variable
+        <ul>
+          <li>
+            <code>
+#initialize an instance of Book class<br>
+book = Book.new("Infine Jest", "David Foster Wallace", 30) <br>
+
+#calling the methods on the object<br>
+p book.title<br>
+p book.author<br>
+p book.price<br>
+p book.display<br>
+p book.file_as<br>
+
+#changing the price variable<br>
+book.price = 25<br>
+p book.price<br>
+p book.display</code></li></ul></p>
+<p>Below is the output of our test and as you can see the methods return what we expect. Now we can create as many Book objects as we'd like and make use the instance methods.
+<ul>
+<li>
+"Infine Jest"<br>
+"David Foster Wallace"<br>
+30<br>
+"This is Infine Jest by David Foster Wallace and it costs $30"<br>
+"David Foster Wallace"<br>
+25<br>
+"This is Infine Jest by David Foster Wallace and it costs $25"</li></ul></p>
+
+
+</body>
+</html>
+
