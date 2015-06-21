@@ -2,6 +2,21 @@
 body{
   background-color:#A1ABB2;
   font-family: 'Noto Sans' sans-serif;
-}
+  margin: 50px 150px 0 150px;
 
+}
+h1{
+  border-bottom: solid black;
+}
+h2{
+  font-size: 20px;
+}
+span{
+  float: right;
+}
+a{
+  text-decoration: none;
+  color: #B23532;
+  font-size: 20px;
+}
 
