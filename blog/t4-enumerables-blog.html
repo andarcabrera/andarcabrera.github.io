@@ -7,10 +7,11 @@
   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
-<body class="blogtext">
-      <h1 class="blogtext" id="blogtitle">Enumerables</h1>
+<body>
+  <div>
+      <h1 class="blogtext" id="blogtitle">Enumerables<span><a href="../website/index1.html">HOME</a></span></h1>
       <h2> The map method</h2>
-      <h3>June 12, 2015</h3>
+      <h2>June 12, 2015</h2>
       <p>The Enumerable module is shared by many objects in Ruby, more notably by collection objects. Most of the querying functionality for arrays, hashes and other collection objects stem from this module. At the core of the Enumerable method is the <i>each</i> method, which yields items to a block, one at a time. Many other methods are built starting from the basic each method, and the one I'll talk about today is the <i> map </i> method</p>
       <p>The map methods (a.k.a <i> collect method</i>) is one of the most important enumerable operations. It always returns an array, regardless of what collection object it starts with and the return array always contains the same amount of elements as the original object. For example, see map applied to an array below:
         <ul>
@@ -31,12 +32,12 @@
             => ["BASIL", "FICUS", "HAZEL", "TARA"]<br>
             The resulting array is not a new array in this case, but the original one was modified in place.
           </li> </ul>
-          When the block does not provide a method and enumerator is returned instead:
+          <p>When the block does not provide a method and enumerator is returned instead:</p>
           <ul>
           <li>pets.map<br>
           => #Enumerator: ["Basil", "Ficus", "Hazel", "Tara"]></li><br>
           </ul>
-          Here are a couple more examples of the map method being used with other collection objects other than arrays:<br>
+          <p>Here are a couple more examples of the map method being used with other collection objects other than arrays:<br></p>
             <ul>
               <li>Range - it results in an array<br>
                 > (1..5).map {|i| i*2}<br>
@@ -48,6 +49,7 @@
             </ul></li>
         </p>
       <p>In conclusion, the map array offers a lot of functionality and it is important to remember map is non-destructive, while map! is destructive and they both always result in arrays.</p>
+    </div>
 </body>
 </html>
 

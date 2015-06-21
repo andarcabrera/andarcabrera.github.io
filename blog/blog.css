@@ -1,22 +1,38 @@
 
 body{
-  background-color:#A1ABB2;
   font-family: 'Noto Sans' sans-serif;
-  margin: 50px 150px 0 150px;
-
+  margin: 50px 150px 50px 150px;
+  background-image:url("https://github.com/andarcabrera/andarcabrera.github.io/blob/master/images/background.png?raw=true");
 }
+
 h1{
   border-bottom: solid black;
+  margin: 30px;
+  padding-top: 30px;
 }
+
 h2{
   font-size: 20px;
+  background-color:#A1ABB2;
+  margin: 30px;
 }
+
+
 span{
   float: right;
+  background-color:#A1ABB2;
 }
+
 a{
   text-decoration: none;
   color: #B23532;
   font-size: 20px;
 }
 
+p{
+   margin: 30px 30px 0px 30px;
+}
+
+div{
+    background-color:#A1ABB2;
+}

@@ -1,16 +1,19 @@
 
 body{
-  background-color:#A1ABB2;
   font-family: 'Indie Flower', cursive;
+  background-image:url("https://github.com/andarcabrera/andarcabrera.github.io/blob/master/images/background.png?raw=true");
+
 }
 }
 div {
    min-height:100%;
    position:relative;
+   background-color:#A1ABB2;
 }
+
 nav ul {
   list-style: none;
-  background-color: #305D7F;
+  /**background-color: #A1ABB2;**/
   text-align: center;
   border-radius: 15px;
 
@@ -41,7 +44,7 @@ nav a.active {
 }
 section{
   float:left;
-  width: 30%;
+  width: 35%;
   height: 80%;
   position: relative;
 }
@@ -50,6 +53,7 @@ section{
   width: 60%;
   margin-top: 30px;
   height: 80%;
+  background-color:#A1ABB2;
 }
 
 section img{
@@ -65,8 +69,20 @@ section img{
 }
 
 h1{
-margin:3px 2px 0px 7px;
 font-family: 'Indie Flower', cursive;
+display: inline-block;
+position: relative;
+bottom: 75px;
+left: 10px;
+color:#FFFCA7;
+}
+
+header{
+  /*background-color: green;*/
+}
+}
+span{
+  margin: 50px;
 }
 
 h2{
@@ -80,20 +96,23 @@ p{
 footer{
 float: bottom;
 clear:both;
-position: absolute;
+/*position: absolute;*/
 bottom:0px;
 width:98%;
 }
 
 footer ul {
   list-style: none;
-  background-color: #305D7F;
+  /*background-color: #305D7F;*/
   text-align: right;
   border-radius: 15px;
+
 }
 footer li {
   display:inline-block;
   text-align: right;
+  margin-top: 30px;
+
 }
 li img{
   padding: 10px 3px 10px 3px;
@@ -103,30 +122,4 @@ li img{
   border-radius: 55%;
   size: 50%;
 }
-#blogaside{
-  width: 50%;
-  padding: 0px;
-  float:left;
-  border-left: 2px solid black;
-  margin-left: 20px;
-}
-#blogsection{
-  width: 40%;
-  border-left: 2px solid black;
-}
-.technical{
-  margin-left: 60px;
-}
-.cultural{
-  margin-left: 60px;
-}
-.blogtext{
-  font-family: 'Noto Sans' sans-serif;
-}
-#blognav{
-  text-align: right;
-  padding:3px 0 3px 10px;
-}
-#blogtitle{
-  margin-left: 38px;
-}
+

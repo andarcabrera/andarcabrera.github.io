@@ -1,0 +1,155 @@
+
+body{
+  font-family: 'Indie Flower', cursive;
+  background-image:url("https://github.com/andarcabrera/andarcabrera.github.io/blob/master/images/background.png?raw=true");
+}
+
+}
+div {
+   min-height:100%;
+   position:relative;
+   background-color:#A1ABB2;
+}
+
+img{
+  margin-left: 10px;
+}
+
+nav{
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 30px 10px 10px 0px;
+}
+
+nav li {
+  font-family: 'Indie Flower', cursive;
+  color:#B23532;
+  font-size: 1.2em;
+  height: 55px;
+  line-height:55px;
+  display:inline-block;
+  padding:20px 70px 3px 10px;
+  text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
+  color:#FFFCA7;
+  display: block;
+  transition: .3s background-color;
+}
+
+nav a:hover {
+  background-color: salmon;
+}
+
+nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+.blogsection{
+  width: 40%;
+  float:left;
+  border-left: 2px solid black;
+  margin-left: 20px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.main{
+  width: 60%;
+  margin:auto;
+  height: 80%;
+  background-color:#A1ABB2;
+  padding: 10px;
+  border-radius: 3%;
+}
+
+.image{
+  height: 80%;
+  position: relative;
+}
+
+h1{
+font-family: 'Indie Flower', cursive;
+color:#FFFCA7;
+margin-left: 10px;
+border-bottom: solid salmon;
+}
+
+}
+span{
+  margin: 50px;
+}
+
+#indexul{
+  padding-left: 50px;
+}
+
+h2{
+    padding: 0 30px 0px 70px;
+}
+
+p{
+  padding: 0 30px 0px 70px;
+}
+
+footer{
+float: bottom;
+clear:both;
+bottom:0px;
+}
+
+footer ul {
+  list-style: none;
+  /*background-color: #305D7F;*/
+  text-align: right;
+  border-radius: 15px;
+
+}
+footer li {
+  display:inline-block;
+  text-align: right;
+  margin-top: 30px;
+
+}
+li img{
+  padding: 10px 3px 10px 3px;
+}
+
+#github{
+  border-radius: 55%;
+  size: 50%;
+}
+
+
+
+h3{
+  padding-left: 10px;
+  color: floralwhite;
+}
+
+ol{
+  color: floralwhite;
+}
+ol li a {
+  text-decoration: none;
+  color:floralwhite;
+  display: block;
+  transition: .3s background-color;
+}
+
+ol li a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
