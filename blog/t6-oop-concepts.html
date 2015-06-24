@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <title>Technica Blog Ruby Variable</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+
+<body>
+<div>
+  <h1>Varied Ruby<span><a href="../website/index1.html">HOME</a></h1>
+  <h2>A review of the different variables in Ruby</h2>
+  <h2>June 24, 2015</h2>
+
+    <p>
+     When working in Ruby you're bound to encounter a few types of variables and knowing their scope is the key to being able to apply good design to your projects. Below is a review of the different variables starting from global to local.
+    </p>
+    <p>
+        <b> $Global Variables</b>, as the name suggests, have a global scope, which means they are visible all throughout your application. The convention is to precede the name of the variable with a $. You can access these variable from wherever you are in your program, from inside a class, a method, a module, etc. But this high visibility is also one their main disadvantages as Object Oriented Design assumes that objects keep their "privacy" and not share a lot of variables with other objects. That's what makes for good design. If your program over-uses the global variables, it can prove very hard to adapt to future changes and a change in a global variable may have unexpected consequences in many parts of the program.
+    </p>
+    <p>
+        <b>@@Class variables</b> are shared by all instances of a certain class and its subclasses and the naming convention is to precede them with @@. They are not visible to any other objects. The important thing to know is that the scope of class variables is class-hierarchical, meaning it's visible not only to instances of the class, but also to all the subclasses of that class. While class variables can be useful, they pose the same disadvantage as the global variables. Due to their broad scope they are less flexible than instance variables. If you change a class variable it will affect all the classes and subclasses that make use of that variable and the change can reverberate through a great chunk of the code.
+    </p>
+     <p>
+        <b>@Instance Variables</b> are the main type of variables used when creating classes in Ruby. Instance variables are recognized by the preceding @. They are only visible to the objects to which they belong and they help store information about that object. When we define instance variables in a class we basically set empty containers that will be filled when the new instance of the class (new object) is initialized. That container will have information about the object, that can be read or changed. Instance variable are very versatile as they can be initiated at a class level, survive across method calls, while at the same time maintaining the object's state and being visible only to one particular object.
+    </p>
+    <p><b>Local Variables</b> are the most basic types of variables. They have a local scope, which is the scope where your program is at the time of assignment. If you assign a local variable while defining a method, you can reuse the same name for another local variable in another method or class. Because of their local scope, even if they share the same name, the local variables will retain the different values for each scope where they were used. The scope of local variables changes often, every time you move from defining a method, to a class, a module, block, etc. and its important to keep track of the scope when assigning them. </p>
+</div>
+</body>
+</html>
