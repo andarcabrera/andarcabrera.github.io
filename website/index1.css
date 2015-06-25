@@ -111,7 +111,6 @@ bottom:0px;
 
 footer ul {
   list-style: none;
-  /*background-color: #305D7F;*/
   text-align: right;
   border-radius: 15px;
 
@@ -152,4 +151,24 @@ ol li a.active {
   background-color: #fff;
   color: #444;
   cursor: default;
+}
+
+#resume{
+  background-color: salmon;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  /*border: solid black;*/
+  font-family: 'Noto Sans', 'sans serif';
+}
+
+#resumelink{
+  color: black;
+}
+
+#center{
+  text-align: center;
+}
+.justify{
+  text-align: justify;
 }
