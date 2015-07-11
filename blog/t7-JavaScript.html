@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>Technica Blog Ruby vs JavaScript</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+
+<body>
+<div>
+  <h1>Ruby and JavaScript <span><a href="../website/index1.html">HOME</a></h1>
+  <h2>Ruby Classes vs. JavaScript Objects</h2>
+  <h2>July 10, 2015</h2>
+
+    <p>
+     Classes in Ruby and constructor functions in Java Script are similar in that they allow us to build objects that share similar properties. Instead of creating objects one by one, which would be very time consuming, we can create a class in Ruby and then create various instances of this class or, in JavaScript, we can use the constructor function. Below is an example:
+    </p>
+    <p>
+        <b> Ruby Class</b> <ul>
+          <li><code>class Book<br>
+            attr_reader :title, :author<br>
+    attr_accessor :price<br>
+  def initialize (title, author, price)<br>
+  <ul>
+    @title = title<br>
+    @author = author<br>
+    @price = price<br></ul>
+  end<br>
+  <br>
+  gone_with_the_wind = Book.new("Gone with the Wind", "Margaret Mitchell", $20")
+    </code></li></ul>
+    </p>
+    <p>
+        <b>JavaScript Constructor function</b> <br>
+        <ul>
+          <li><code>function Book(name, author, price) {<br><ul>
+            this.name = name;<br>
+            this.author = author;<br>
+            this.price = price
+          </ul>
+        }<br>
+        goneWithTheWind = new Book("Gone with the Wind", "Margaret Mitchell", 30);
+    </code></li></ul>
+    </p>
+<p>A main difference is that classes in Ruby are objects in their own right and they are all subclasses of the Class class, while the constructor in JavaScript is a function. Objects in Ruby can inherit a lot of behaviors from their superclasses, while in JavaScript, the shared properties will be the ones defined in the constructor functions or the ones that are subsequently added.</p>
+
+</div>
+</body>
+</html>
