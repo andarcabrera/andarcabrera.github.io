@@ -1,0 +1,53 @@
+body {
+  background-color: beige;
+/*     column-count: 2;
+     */}
+header{
+   background-color: lightskyblue;
+   text-align: center;
+   font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+div{
+    float: left;
+    width: 45%;
+    border: 3px solid;
+    border-color: black;
+    background-color: yellow;
+    margin: 3px;
+    padding: 4px;
+    height: 300px;
+}
+
+h3{
+    text-align: center;
+    background-color: lightgreen;
+    line-height: 2em;
+}
+
+/* tr{
+    width: 30%;
+} */
+
+th {
+    font-size: 0.8em;
+    font-weight: normal;
+    text-align: left;
+}
+
+footer{
+    float:bottom;
+    clear:both;
+    text-align: center;
+    background-color: lightskyblue;
+    font-size: 0.7em;
+    line-height: 2em;
+}
+
+p{
+font-size: 0.8em;
+text-align: center;
+}
+}
