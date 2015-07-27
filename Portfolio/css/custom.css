@@ -1,0 +1,76 @@
+body{
+  background-image:url("https://github.com/andarcabrera/andarcabrera.github.io/blob/master/images/background.png?raw=true");
+}
+
+.navbar-inverse {
+  background-color:#F5AB35;
+  color: #F5AB35;
+  padding: 15px;
+  border: none;
+}
+
+.navbar-inverse .navbar-brand{
+  color: #34495E;
+  font-size: 2em;
+  font-weight: 600
+}
+
+.navbar .navbar-brand:hover{
+  color: #8e44ad;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #2c3e50;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #8e44ad;
+}
+
+h1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 30%;
+  margin: auto;
+  color: #3498db;
+
+}
+
+p{
+  width: 70%;
+  margin: auto;
+  color: #3498db;
+  padding-top: 30px;
+  font-size: 1.3em;
+}
+
+hr.star {
+  margin: 25px auto 30px;
+  padding:0;
+  max-width: 400px;
+  text-align: center;
+  border: 0;
+  border-top: solid 3px;
+  text-align: left;
+  color: #3498db;
+}
+
+hr.star:after{
+  color: orange;
+  content:"\2602";
+  position: relative;
+  top:-.8em;
+  padding: 0.25em;
+  font-size: 5em;
+}
+
+footer{
+  margin-top: 50px;
+  padding-top: 10px;
+  font-size: 10px;
+  text-align: left;
+  height: 60px;
+}
+
